@@ -33,7 +33,6 @@
         <activity android:name=".ChangePasswordActivity" />
         <activity android:name=".UpdateGraphicalPasswordActivity" />
         <activity android:name=".ForgotPasswordActivity" />
-        <activity android:name=".Compose2Activity" />
         <activity android:name=".Attach2Activity" />
         <activity android:name=".AttachVideo"></activity>
     </application>

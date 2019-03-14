@@ -84,7 +84,7 @@ public class AttachVideo extends AppCompatActivity {
 
                 intent.setAction(Intent.ACTION_GET_CONTENT);
 
-                startActivityForResult(Intent.createChooser(intent, "Select Image From Gallery"), 1);
+                startActivityForResult(Intent.createChooser(intent, "Select Video From Gallery"), 1);
 
             }
         });
@@ -143,7 +143,7 @@ public class AttachVideo extends AppCompatActivity {
 
                 super.onPreExecute();
 
-                progressDialog = ProgressDialog.show(AttachVideo.this,"Image is Uploading","Please Wait",false,false);
+                progressDialog = ProgressDialog.show(AttachVideo.this,"Video is Uploading","Please Wait",false,false);
             }
 
             @Override

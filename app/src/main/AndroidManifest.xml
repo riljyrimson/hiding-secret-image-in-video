@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.user.securemail">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".UserRegistrationActivity" />
+        <activity android:name=".UserLoginActivity" />
+        <activity android:name=".OptionsActivity" />
+        <activity android:name=".UserHomeActivity" />
+        <activity android:name=".AddGraphicalPasswordActivity" />
+        <activity android:name=".GraphicalLoginActivity" />
+        <activity android:name=".ComposeActivity" />
+        <activity android:name=".AttachActivity" />
+        <activity android:name=".InboxActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".UpdateGraphicalPasswordActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".Compose2Activity" />
+        <activity android:name=".Attach2Activity" />
+        <activity android:name=".AttachVideo"></activity>
+    </application>
+
+</manifest>

@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_option"
     android:layout_width="match_parent"
-    android:background="@drawable/loginbgimg"
 
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -21,8 +20,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="51dp"
         android:text="Compose"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp" />
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textSize="22dp" />
 
     <Button
         android:id="@+id/btninbox"
@@ -33,8 +33,10 @@
         android:layout_below="@+id/btncompose"
         android:layout_marginTop="63dp"
         android:text="Inbox"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="18sp" />
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+
+        android:textSize="22dp" />
 
     <Button
         android:text="Sent Items"
@@ -44,8 +46,10 @@
         android:id="@+id/btnsent"
         android:layout_below="@+id/btninbox"
         android:layout_centerHorizontal="true"
-        android:textSize="18sp"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textSize="22dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        />
 
     <Button
         android:text="Options"
@@ -56,6 +60,8 @@
         android:layout_below="@+id/btnsent"
         android:layout_alignRight="@+id/btninbox"
         android:layout_alignEnd="@+id/btninbox"
-        android:textSize="18sp"
-        android:textColor="@color/colorPrimaryDark" />
+        android:textSize="22dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        />
 </RelativeLayout>

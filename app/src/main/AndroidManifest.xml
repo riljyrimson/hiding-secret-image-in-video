@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.user.securemail">
+    package="info.jef.pduploader">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +18,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".VideoView"></activity>
+        <activity android:name=".Imagviw" />
+        <activity android:name=".Main3Activity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,9 +33,10 @@
         <activity android:name=".HomeActivity" />
         <activity android:name=".UserRegistrationActivity" />
         <activity android:name=".UserLoginActivity" />
+        <activity android:name=".listedit" />
+        <activity android:name=".listmain" />
         <activity android:name=".OptionsActivity" />
-        <activity android:name=".UserHomeActivity" />
-        <activity android:name=".AddGraphicalPasswordActivity" />
+        <activity android:name=".UserHomeActivity" /> <!-- activity android:name=".AddGraphicalPasswordActivity" / -->
         <activity android:name=".GraphicalLoginActivity" />
         <activity android:name=".ComposeActivity" />
         <activity android:name=".AttachActivity" />
@@ -33,8 +44,12 @@
         <activity android:name=".ChangePasswordActivity" />
         <activity android:name=".UpdateGraphicalPasswordActivity" />
         <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".Compose2Activity" />
         <activity android:name=".Attach2Activity" />
-        <activity android:name=".AttachVideo"></activity>
+        <activity android:name=".AttachVideo" />
+        <activity android:name=".Sentmain" />
+        <activity android:name=".Sentlistedit" />
+        <activity android:name=".key" />
     </application>
 
 </manifest>

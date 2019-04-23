@@ -4,82 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/loginbgimg"
     tools:context="com.example.user.securemail.OptionsActivity">
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/cmp"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="42dp"
+        android:layout_gravity="center"
+         android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:layout_marginTop="40dp"
+        android:textSize="20dp"
         android:text="Compose" />
 
     <Button
         android:id="@+id/inbox"
-        android:layout_width="wrap_content"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/cmp"
-        android:layout_marginTop="32dp"
+          android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textSize="20dp"
         android:text="Inbox" />
+    <Button
+        android:id="@+id/updat"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Sent Mail" />
+
+    <!--Button
+        android:id="@+id/vidcall"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Cloud Upload"
+        android:textColor="@color/white"
+        android:textSize="20dp" /-->
+    <Button
+        android:id="@+id/pcloud"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:text="Personnel Cloud" />
+
+
+
 
     <Button
         android:id="@+id/exit"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+         android:text="Exit" />
+
+
+
+
+    <TextView
+        android:id="@+id/mob"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="51dp"
-        android:layout_marginLeft="13dp"
-        android:layout_marginStart="13dp"
-        android:text="Exit" />
-
-    <Button
-        android:id="@+id/vidcall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/updat"
-        android:layout_marginTop="27dp"
-        android:text="Cloud Upload" />
-
-    <Button
-        android:id="@+id/updat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/inbox"
-        android:layout_marginTop="28dp"
-        android:text="Sent Mail" />
-
-    <Button
-        android:id="@+id/pcloud"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/exit"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="20dp"
-        android:text="Personnel Cloud" />
-
+        android:text=""
+        android:textColor="@color/white"/>
+</LinearLayout>
 </RelativeLayout>

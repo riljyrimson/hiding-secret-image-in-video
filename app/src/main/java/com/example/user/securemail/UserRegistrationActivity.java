@@ -170,7 +170,7 @@ public class UserRegistrationActivity extends AppCompatActivity {
         }
         else
         {
-            Toast.makeText(UserRegistrationActivity.this, "Saved Data Successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(UserRegistrationActivity.this, "Save Data Successfully", Toast.LENGTH_SHORT).show();
             txtUsername.setText("");
             txtPassword.setText("");
             txtConPassword.setText("");

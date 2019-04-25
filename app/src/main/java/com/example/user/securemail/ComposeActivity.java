@@ -248,18 +248,15 @@ return true;
         else
         {
             String mobile=pho.getText().toString();
-            //Toast.makeText(ComposeActivity.this, "Video and Image send successfully", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ComposeActivity.this, "Video and Image send successfully", Toast.LENGTH_SHORT).show();
             SmsManager sms= SmsManager.getDefault();
            // Toast.makeText(getApplicationContext(), "Please check your inbox", Toast.LENGTH_LONG).show();
-            Intent i = new Intent(getApplicationContext(),OptionsActivity.class);
+            Intent i = new Intent(getApplicationContext(),ComposeActivity.class);
             PendingIntent pi= PendingIntent.getActivity(getApplicationContext(),0,i,0);
             sms.sendTextMessage(String.valueOf(mobile),null,"Your Security Code is :"+code,pi,null);
             //Toast.makeText(getApplicationContext(),"message send successfully", Toast.LENGTH_LONG).show();
             //Toast.makeText(this, ""+mobile, Toast.LENGTH_SHORT).show();
-            Toast.makeText(ComposeActivity.this, "Video and Image send successfully", Toast.LENGTH_SHORT).show();
-            i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-startActivity(i);
+
 
             //Intent i=new Intent(ComposeActivity.this,AttachActivity.class);
             //i.putExtra("logged",logged);

@@ -21,8 +21,7 @@ import org.json.JSONObject;
 
 public class OptionsActivity extends Activity {
 String logged="",URL_PRODUCTS,phone;
-    Button compose,inbox,ext,upd,pcl;
-    //Button vid;
+    Button compose,inbox,ext,vid,upd,pcl,changep;
     TextView mob;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,9 +32,10 @@ String logged="",URL_PRODUCTS,phone;
         compose=(Button)findViewById(R.id.cmp);
        inbox=(Button)findViewById(R.id.inbox);
         ext=(Button)findViewById(R.id.exit);
-      //  vid=(Button)findViewById(R.id.vidcall);
+       // vid=(Button)findViewById(R.id.vidcall);
         upd=(Button)findViewById(R.id.updat);
         pcl=(Button)findViewById(R.id.pcloud);
+        changep=(Button)findViewById(R.id.cpass);
         mob=(TextView)findViewById(R.id.mob);
 
         /*URL_PRODUCTS = "https://www.grapestechs.com/securemail/phone.php?user="+logged+"";
@@ -80,7 +80,13 @@ String logged="",URL_PRODUCTS,phone;
         Volley.newRequestQueue(this).add(stringRequest);*/
 
 
-
+changep.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        Intent i=new Intent(getApplicationContext(),Cpassword.class);
+        startActivity(i);
+    }
+});
 
 
         compose.setOnClickListener(new View.OnClickListener() {
@@ -117,10 +123,10 @@ inbox.setOnClickListener(new View.OnClickListener() {
 ext.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View view) {
-        Intent intent=new Intent(OptionsActivity.this,HomeActivity.class);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        startActivity(intent);
+        Intent i=new Intent(OptionsActivity.this,UserLoginActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        i.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(i);
     }
 });
 /*vid.setOnClickListener(new View.OnClickListener() {

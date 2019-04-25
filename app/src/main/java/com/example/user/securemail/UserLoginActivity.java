@@ -8,6 +8,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -26,13 +27,24 @@ import java.net.URLEncoder;
 public class UserLoginActivity extends Activity {
     EditText UsernameEt,passwordEt;
     String username="";
+    TextView fpassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_login);
         UsernameEt = (EditText)findViewById(R.id.txthoteluser);
         passwordEt = (EditText)findViewById(R.id.password);
+        fpassword=(TextView)findViewById(R.id.fpass);
+        fpassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(getApplicationContext(),Forgot_password.class);
+                startActivity(i);
+
+            }
+        });
     }
+
 
     public void OnLogin(View view) {
         username = UsernameEt.getText().toString();
@@ -98,7 +110,7 @@ public class UserLoginActivity extends Activity {
         protected void onPostExecute(String result) {
             alertDialog.setMessage(result);
             alertDialog.show();
-            if(result.equalsIgnoreCase("Login success")) {
+            if(result.equalsIgnoreCase("login success")) {
                 Intent intent = new Intent(UserLoginActivity.this, OptionsActivity.class);
                 intent.putExtra("logged",username);
                 startActivity(intent);
@@ -106,7 +118,7 @@ public class UserLoginActivity extends Activity {
             }
             else
             {
-                Toast.makeText(UserLoginActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserLoginActivity.this, "Login Failed"+result, Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(UserLoginActivity.this, UserLoginActivity.class);
                 startActivity(intent);

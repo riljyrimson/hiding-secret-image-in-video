@@ -160,10 +160,10 @@ String Code="code";
 
                 // Setting image as transparent after done uploading.
                 imageView.setImageResource(android.R.color.transparent);
-               // Intent i=new Intent(Attach2Activity.this,Attach2Activity.class);
-                //i.putExtra("logged",logged);
-                //i.putExtra("code",code);
-               // startActivity(i);
+                Intent i=new Intent(Attach2Activity.this,Attach2Activity.class);
+                i.putExtra("logged",logged);
+                i.putExtra("code",code);
+                startActivity(i);
 
 
             }

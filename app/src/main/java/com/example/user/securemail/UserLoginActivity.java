@@ -110,7 +110,7 @@ public class UserLoginActivity extends Activity {
         protected void onPostExecute(String result) {
             alertDialog.setMessage(result);
             alertDialog.show();
-            if(result.equalsIgnoreCase("login success")) {
+            if(result.equalsIgnoreCase("Logged in Successfully")) {
                 Intent intent = new Intent(UserLoginActivity.this, OptionsActivity.class);
                 intent.putExtra("logged",username);
                 startActivity(intent);
@@ -118,7 +118,7 @@ public class UserLoginActivity extends Activity {
             }
             else
             {
-                Toast.makeText(UserLoginActivity.this, "Login Failed"+result, Toast.LENGTH_SHORT).show();
+                Toast.makeText(UserLoginActivity.this, "Login Failed", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(UserLoginActivity.this, UserLoginActivity.class);
                 startActivity(intent);

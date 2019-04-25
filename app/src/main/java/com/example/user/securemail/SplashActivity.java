@@ -10,7 +10,7 @@ import java.util.TimerTask;
 public class SplashActivity extends AppCompatActivity {
 
     // Set Duration of the Splash Screen
-    long Delay = 1000;
+    long Delay = 1500;
 
 
     @Override
